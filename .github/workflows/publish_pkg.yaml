@@ -19,4 +19,3 @@ jobs:
           run: |
             python setup.py sdist bdist_wheel
             twine upload --verbose --repository-url https://test.pypi.org/legacy/ -u ${{ secrets.TWINE_USERNAME }} -p ${{ secrets.TWINE_PASSWORD }} dist/*
-            working-directory: django_cityloc_pkg_Stefan-Valencia
